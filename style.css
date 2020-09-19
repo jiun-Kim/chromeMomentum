@@ -182,14 +182,3 @@ body {
   font-weight: 800;
   font-size: 20px;
 }
-.lacation-box {
-  display: flex;
-  align-items: center;
-}
-.temperature-box {
-  display: flex;
-  align-items: center;
-}
-i {
-  margin-right: 10px;
-}
