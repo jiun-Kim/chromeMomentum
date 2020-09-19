@@ -1,13 +1,13 @@
-const LOCNAME = "locationName";
-const APIKEY = "47214b8b636b66b44522808a4fdb2713";
 const weather = document.querySelector(".weather-box");
 const weatherN = weather.querySelector(".weather-Nomal");
 const weatherC = weather.querySelector(".weather-comp");
 const weatherT = weather.querySelector(".weather-temp");
+const APIKEY = "47214b8b636b66b44522808a4fdb2713";
+const LOCNAME = "locationName";
 
 function loadAPI(lat, lon) {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKEY}&units=metric
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKEY}&units=metric
 
     `
   )
