@@ -1,0 +1,195 @@
+@keyframes splash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes colo {
+  from {
+    color: white;
+  }
+  to {
+    color: rgba(0, 0, 0, 0.521);
+  }
+}
+.spsh {
+  animation: splash 1.5s ease-in-out forwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  background-color: rgb(21, 20, 24);
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(21, 20, 24);
+}
+.clock-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 45px;
+  height: 140px;
+}
+.dayDate {
+  writing-mode: tb-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: black 1px 0 10px;
+}
+.Time {
+  color: white;
+  text-shadow: black 1px 0 10px;
+  font-size: 180px;
+}
+.ampm {
+  font-size: 20px;
+  margin-left: 15px;
+  color: white;
+  text-shadow: black 1px 0 10px;
+}
+/* ----------Greeting line---------- */
+@keyframes blank {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.js-greetingForm {
+  display: flex;
+  justify-content: center;
+}
+.js-greetingForm input {
+  margin-top: 80px;
+  animation: blank 3s ease-in-out;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+}
+.js-greetingForm input::placeholder {
+  color: white;
+}
+.js-greetingForm input:focus::placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.js-greetingForm input:focus {
+  animation: none;
+  outline-color: white;
+}
+.js-greetingForm input:hover::placeholder {
+  color: none;
+  text-shadow: black 1px 0 10px;
+}
+.greetingText {
+  animation: blank 3s ease-in-out;
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  text-shadow: black 1px 0 10px;
+}
+.js-toDoForm {
+  display: flex;
+  justify-content: center;
+}
+.js-toDoForm input {
+  text-align: center;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.js-toDoForm input:hover {
+  border-bottom: 3px solid white;
+  transition: border-bottom 0.5s ease-in-out;
+}
+.js-toDoForm input:focus {
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0);
+}
+.js-toDoForm input::placeholder {
+  color: rgb(0, 0, 0);
+}
+.js-toDoForm input:focus::placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.js-toDoList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.js-toDoList > li > span {
+  text-shadow: black 1px 0 10px;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+.js-toDoList > li > button {
+  text-shadow: black 1px 0 10px;
+  font-size: 30px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  color: red;
+}
+
+.xbtn {
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  color: red;
+}
+.xbtn:focus {
+  outline: none;
+}
+.xbtn:hover {
+  background-color: rgb(255, 255, 255);
+}
+.displayNone {
+  display: none;
+}
+.bg_Img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.weather-box {
+  text-shadow: black 1px 0 10px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+.lacation-box {
+  display: flex;
+  align-items: center;
+}
+.temperature-box {
+  display: flex;
+  align-items: center;
+}
+i {
+  margin-right: 10px;
+}
