@@ -1,7 +1,7 @@
 const weather = document.querySelector(".weather-box");
 const weatherN = weather.querySelector(".weather-Nomal");
-const weatherC = weather.querySelector(".weather-comp");
-const weatherT = weather.querySelector(".weather-temp");
+const weatherC = weather.querySelector(".lacation-box");
+const weatherT = weather.querySelector(".temperature-box");
 const APIKEY = "47214b8b636b66b44522808a4fdb2713";
 const LOCNAME = "locationName";
 
