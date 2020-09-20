@@ -16,7 +16,7 @@
   }
 }
 .spsh {
-  animation: splash 1.5s ease-in-out forwards;
+  animation: splash 3s ease-in-out forwards;
   position: absolute;
   top: 0;
   left: 0;
