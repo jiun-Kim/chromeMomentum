@@ -11,8 +11,14 @@ function genRandom() {
   const number = Math.floor(Math.random() * IMG_NUMBER);
   return number;
 }
-function init() {
+
+function setInTime() {
   const randomNumber = genRandom();
   paintImage(randomNumber);
+}
+
+function init() {
+  setInTime()
+  setInterval(setInTime, 10000)
 }
 init();
